@@ -2,7 +2,7 @@ import { desktopCapturer } from 'electron';
 
 export async function getScreenShots() {
   const inputSources = await desktopCapturer.getSources({
-    types: ['screen'],
+    types: ['window'],
     thumbnailSize: {
       width: 1440,
       height: 810,
